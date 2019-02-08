@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  magenta:
+    build: .
+    volumes:
+      - ./work:/work
+    ports:
+      - 3000:3000
+    command: python practice.py
